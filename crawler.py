@@ -117,7 +117,7 @@ class IWillTravelAgainParser(PageObject):
 
     def parse(self):
         regions = self.parse_regions_on_main_page()
-        for region in regions[4:5]:
+        for region in regions:
             print(regions)
             self.parse_region(region)
 
