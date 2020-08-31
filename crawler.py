@@ -36,6 +36,7 @@ class PageObject:
 
 
 class IWillTravelAgainLocators:
+    
     REGION_LOCATOR = 'a.link.a-image-button'
     REGION_NAME_LOCATOR = 'div.inner.prose > h4'
     POST_ID_LOCATOR = '#activity-grid-1'
@@ -44,6 +45,7 @@ class IWillTravelAgainLocators:
 
 
 class IWillTravelAgainParser(PageObject):
+    
     def __init__(self, url:str, api_url:str):
         self.URL = url
         self.API = api_url
